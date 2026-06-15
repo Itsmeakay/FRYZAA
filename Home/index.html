@@ -1,0 +1,1050 @@
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <!-- META TAGS -->
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Fryzaa - Premium Luxury Fast Food Experience"
+  >
+
+  <meta
+    name="keywords"
+    content="Fryzaa, Burger, Fast Food, Jaipur, Restaurant"
+  >
+
+  <title>FRYZAA | Luxury Fast Food</title>
+
+  <!-- FAVICON -->
+
+  <link
+    rel="icon"
+    href="../assets/icons/favicon.png"
+  >
+
+  <!-- GOOGLE FONTS -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <!-- POPPINS -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- BEBAS NEUE -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- FONT AWESOME -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <!-- AOS -->
+
+  <link
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+    rel="stylesheet"
+  >
+
+  <!-- SWIPER -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  >
+
+  <!-- SHARED CSS -->
+
+  <link
+    rel="stylesheet"
+    href="../shared/global.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../shared/navbar.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../shared/footer.css"
+  >
+
+  
+
+  <!-- HOME CSS -->
+
+  <link
+    rel="stylesheet"
+    href="./home.css"
+  >
+
+</head>
+
+<body>
+
+  <!-- =========================================
+       NAVBAR
+  ========================================== -->
+
+  <nav class="navbar">
+
+    <!-- LOGO -->
+
+    <div class="logo">
+
+      <a href="#">
+        FRYZAA
+      </a>
+
+    </div>
+
+    <!-- NAV LINKS -->
+
+    <ul class="nav-links">
+
+      <li>
+        <a href="../Home/index.html">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="../Menu/menu.html">
+          Menu
+        </a>
+      </li>
+
+      <li>
+        <a href="../About/about.html">
+          About
+        </a>
+      </li>
+
+      <li>
+        <a href="../Contact/contact.html">
+          Contact
+        </a>
+      </li>
+
+    </ul>
+
+    <!-- NAV ACTIONS -->
+
+    <div class="nav-actions">
+
+      <!-- LOGIN -->
+
+      <div class="user-menu">
+
+  <a
+  href="../auth/login.html"
+  class="login-btn"
+  id="loginBtn"
+  >
+
+    <i class="fa-regular fa-user"></i>
+
+    Login
+
+  </a>
+
+  <div
+  class="user-dropdown"
+  id="userDropdown"
+  >
+
+    <a href="../profile/profile.html">
+
+      My Profile
+
+    </a>
+
+    <a href="../orders/orders.html">
+
+      My Orders
+
+    </a>
+
+    <a
+    href="#"
+    id="logoutBtn"
+    >
+
+      Logout
+
+    </a>
+
+  </div>
+
+</div>
+
+      <!-- CART -->
+
+      <a
+  href="../cart/cart.html"
+  class="cart-icon"
+>
+
+  <i class="fa-solid fa-cart-shopping"></i>
+
+  <span class="cart-count">
+    0
+  </span>
+
+</a>
+
+    <!-- HAMBURGER -->
+
+    <div class="hamburger">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </div>
+
+  </nav>
+
+  <div
+id="storeClosedBanner"
+class="store-closed-banner"
+style="display:none;"
+>
+
+🚫 Store is temporarily closed.
+We are not accepting orders right now.
+
+</div>
+  <!-- =========================================
+       HERO SECTION
+  ========================================== -->
+
+  <section class="hero-section">
+
+    <!-- VIDEO BACKGROUND -->
+
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="hero-video"
+    >
+
+      <source
+        src="../assets/videos/burgervideo.mp4"
+        type="video/mp4"
+      >
+
+    </video>
+
+    <!-- OVERLAY -->
+
+    <div class="hero-overlay"></div>
+
+    <!-- HERO CONTENT -->
+
+    <div class="hero-content">
+
+      <h1>
+        Bite Into Luxury
+      </h1>
+
+      <p>
+
+        Premium burgers, crispy fries,
+        juicy bites & unforgettable flavours.
+
+      </p>
+
+      <!-- HERO BUTTONS -->
+
+      <div class="hero-buttons">
+
+        <button class="hero-order-btn">
+
+          Order Now
+
+        </button>
+
+        <button class="hero-menu-btn">
+
+          Explore Menu
+
+        </button>
+
+
+      </div>
+
+    </div>
+
+    <!-- SCROLL DOWN -->
+
+    <div class="scroll-down">
+
+      <i class="fa-solid fa-chevron-down"></i>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================
+       FEATURED BURGERS
+  ========================================== -->
+
+  <section class="featured-section">
+
+    <!-- SECTION HEADER -->
+
+    <div class="section-header">
+
+      <h2>
+        Best Selling Burgers
+      </h2>
+
+      <p>
+        Crafted for real burger lovers.
+      </p>
+
+    </div>
+
+    <!-- BURGER GRID -->
+
+    <div class="burger-grid">
+
+      <!-- CARD 1 -->
+
+      <div class="burger-card">
+
+        <div class="burger-image">
+
+          <img
+            src="../assets/images/burgers/burger1.jpeg"
+            alt="Burger"
+          >
+
+          <span class="burger-tag">
+           Classic
+          </span>
+
+        </div>
+
+        <div class="burger-info">
+
+          <div class="burger-top">
+
+            <h3>
+              Classic American Burger
+            </h3>
+
+            <span class="burger-price">
+              ₹179
+            </span>
+
+          </div>
+
+          <p>
+            Double juicy patties with molten cheese and crispy layers.
+          </p>
+
+          <div class="burger-bottom">
+
+            <div class="burger-rating">
+
+              ⭐ 4.9
+
+            </div>
+
+           <button 
+  class="add-cart-btn"
+  data-name="Classic American Burger"
+  data-price="179"
+  data-image="../assets/images/burgers/burger1.jpeg"
+>
+  Add to Cart
+</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+
+      <div class="burger-card">
+
+        <div class="burger-image">
+
+          <img
+            src="../assets/images/burgers/non-veg1.jpeg"
+            alt="Burger"
+          >
+
+          <span class="burger-tag spicy">
+            Spicy
+          </span>
+
+        </div>
+
+        <div class="burger-info">
+
+          <div class="burger-top">
+
+            <h3>
+              Fryzaa special Burger
+            </h3>
+
+            <span class="burger-price">
+              ₹100
+            </span>
+
+          </div>
+
+          <p>
+            Loaded with spicy sauces, crispy chicken and grilled onions.
+          </p>
+
+          <div class="burger-bottom">
+
+            <div class="burger-rating">
+
+              ⭐ 4.8
+
+            </div>
+
+           <button 
+  class="add-cart-btn"
+  data-name="Fryzaa Special Burger"
+  data-price="100"
+  data-image="../assets/images/burgers/non-veg1.jpeg"
+>
+  Add to Cart
+</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+
+      <div class="burger-card">
+
+        <div class="burger-image">
+
+          <img
+            src="../assets/images/burgers/burger3.jpg"
+            alt="Burger"
+          >
+
+          <span class="burger-tag new">
+            New
+          </span>
+
+        </div>
+
+        <div class="burger-info">
+
+          <div class="burger-top">
+
+            <h3>
+              Mexican Burger
+            </h3>
+
+            <span class="burger-price">
+              ₹69
+            </span>
+
+          </div>
+
+          <p>
+            Smoky grilled perfection with premium cheese and sauces.
+          </p>
+
+          <div class="burger-bottom">
+
+            <div class="burger-rating">
+
+              ⭐ 5.0
+
+            </div>
+
+            <button 
+  class="add-cart-btn"
+  data-name="Mexican Burger"
+  data-price="69"
+  data-image="../assets/images/burgers/burger3.jpg"
+>
+  Add to Cart
+</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+ 
+  <!-- OFFERS SECTION -->
+
+<section class="offers-section">
+
+  <!-- SECTION HEADER -->
+
+  <div class="section-header">
+
+    <h2>
+      Hot Deals & Combos
+    </h2>
+
+    <p>
+      Crazy offers crafted for burger lovers.
+    </p>
+
+  </div>
+
+  <!-- OFFERS GRID -->
+
+  <div class="offers-grid">
+ <!-- OFFER 1 -->
+
+<div class="offer-card big-offer">
+
+  <!-- IMAGE -->
+
+  <div class="offer-image">
+
+    <img
+      src="../assets/images/offers/offer1.png"
+      alt="Burger Offer"
+    >
+
+  </div>
+
+  <!-- CONTENT -->
+
+  <div class="offer-content">
+
+    <span class="offer-tag">
+      Limited Offer
+    </span>
+
+    <h3>
+      50% OFF
+    </h3>
+
+    <p>
+      On all premium burgers every Friday night.
+    </p>
+
+    <button class="offer-btn">
+
+      Grab Deal
+
+    </button>
+
+  </div>
+
+</div>
+
+    <!-- OFFER 2 -->
+
+    <!-- OFFER 2 -->
+
+<div class="offer-card">
+
+  <div class="offer-image small-image">
+
+    <img
+      src="../assets/images/offers/offer2.png"
+      alt="Fries"
+    >
+
+  </div>
+
+  <div class="offer-content">
+
+    <span class="offer-tag red">
+      Free Fries
+    </span>
+
+    <h3>
+      FREE LARGE FRIES
+    </h3>
+
+    <p>
+      On orders above ₹499.
+    </p>
+
+  </div>
+
+</div>
+
+    <!-- OFFER 3 -->
+
+    <!-- OFFER 3 -->
+
+<div class="offer-card">
+
+  <div class="offer-image small-image">
+
+    <img
+      src="../assets/images/offers/offer3.png"
+      alt="Combo"
+    >
+
+  </div>
+
+  <div class="offer-content">
+
+    <span class="offer-tag green">
+      Midnight Combo
+    </span>
+
+    <h3>
+      NIGHT CRAVINGS
+    </h3>
+
+    <p>
+      Burgers + Coke + Fries at special combo prices.
+    </p>
+
+  </div>
+
+</div>
+
+</section>
+
+
+
+  <!-- ABOUT PREVIEW -->
+
+<section class="about-preview">
+
+  <div class="about-container">
+
+    <!-- LEFT IMAGE -->
+
+    <div class="about-image">
+
+      <img
+        src="../assets/images/burgers/burger4.jpg"
+        alt="Luxury Burger"
+      >
+
+    </div>
+
+    <!-- RIGHT CONTENT -->
+
+    <div class="about-content">
+
+      <span class="about-tag">
+        About Fryzaa
+      </span>
+
+      <h2>
+        Crafted For Real Burger Lovers
+      </h2>
+
+      <p>
+
+        At Fryzaa, we don’t just serve burgers —
+        we create unforgettable food experiences.
+        From premium ingredients to sizzling flavours,
+        every bite is designed to satisfy your cravings.
+
+      </p>
+
+      <!-- STATS -->
+
+      <div class="about-stats">
+
+        <div class="stat-box">
+
+          <h3>
+            25K+
+          </h3>
+
+          <span>
+            Happy Customers
+          </span>
+
+        </div>
+
+        <div class="stat-box">
+
+          <h3>
+            100+
+          </h3>
+
+          <span>
+            Premium Recipes
+          </span>
+
+        </div>
+
+        <div class="stat-box">
+
+          <h3>
+            24/7
+          </h3>
+
+          <span>
+            Fast Delivery
+          </span>
+
+        </div>
+
+      </div>
+
+      <!-- BUTTON -->
+
+      <button class="about-btn">
+
+        Explore More
+
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- =========================================
+       TESTIMONIALS
+  ========================================== -->
+
+ <!-- TESTIMONIALS -->
+
+<section class="testimonials-section">
+
+  <!-- SECTION HEADER -->
+
+  <div class="section-header">
+
+    <h2>
+      What Our Customers Say
+    </h2>
+
+    <p>
+      Real reviews from burger lovers.
+    </p>
+
+  </div>
+
+  <!-- TESTIMONIAL GRID -->
+
+  <div class="testimonial-grid">
+
+    <!-- CARD 1 -->
+
+    <div class="testimonial-card">
+
+      <div class="testimonial-top">
+
+        <img
+          src="../assets/images/testimonials/user1.jpg"
+          alt="Customer"
+        >
+
+        <div>
+
+          <h3>
+            Aryan Sharma
+          </h3>
+
+          <span>
+            Food Blogger
+          </span>
+
+        </div>
+
+      </div>
+
+      <p>
+
+        “The burgers were insanely juicy and premium.
+        Definitely one of the best burger experiences in Jaipur.”
+
+      </p>
+
+      <div class="testimonial-stars">
+
+        ⭐⭐⭐⭐⭐
+
+      </div>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="testimonial-card">
+
+      <div class="testimonial-top">
+
+        <img
+          src="../assets/images/testimonials/user2.jpg"
+          alt="Customer"
+        >
+
+        <div>
+
+          <h3>
+            Aman Verma
+          </h3>
+
+          <span>
+            Regular Customer
+          </span>
+
+        </div>
+
+      </div>
+
+      <p>
+
+        “Late night combos are amazing.
+        Delivery was super fast and burgers tasted incredible.”
+
+      </p>
+
+      <div class="testimonial-stars">
+
+        ⭐⭐⭐⭐⭐
+
+      </div>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="testimonial-card">
+
+      <div class="testimonial-top">
+
+        <img
+          src="../assets/images/testimonials/user3.jpg"
+          alt="Customer"
+        >
+
+        <div>
+
+          <h3>
+            Simran Kaur
+          </h3>
+
+          <span>
+            Burger Lover
+          </span>
+
+        </div>
+
+      </div>
+
+      <p>
+
+        “Loved the premium packaging,
+        crispy fries and the smoky grilled burger.”
+
+      </p>
+
+      <div class="testimonial-stars">
+
+        ⭐⭐⭐⭐⭐
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+
+ <!-- FOOTER -->
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- LEFT -->
+
+    <div class="footer-brand">
+
+      <h2>
+        FRYZAA
+      </h2>
+
+      <p>
+
+        Premium burgers, crispy fries and unforgettable flavours crafted for real burger lovers.
+
+      </p>
+
+      <!-- SOCIALS -->
+
+      <div class="footer-socials">
+
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-google"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- LINKS -->
+
+    <div class="footer-links">
+
+      <h3>
+        Quick Links
+      </h3>
+
+      <a href="../Home/index.html">
+        Home
+      </a>
+
+      <a href="../Menu/menu.html">
+        Menu
+      </a>
+
+      <a href="../About/about.html">
+        About
+      </a>
+
+      <a href="../Contact/contact.html">
+        Contact
+      </a>
+
+    </div>
+
+    <!-- CONTACT -->
+
+    <div class="footer-contact">
+
+      <h3>
+        Contact
+      </h3>
+
+      <p>
+        Jaipur, Rajasthan
+      </p>
+
+      <p>
+        support@fryzaa.com
+      </p>
+
+      <p>
+        +91 9664129992
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+
+  <div class="footer-bottom">
+
+    <p>
+
+      © 2026 Fryzaa. All Rights Reserved.
+
+    </p>
+
+  </div>
+
+</footer>
+
+  <!-- =========================================
+       SCRIPTS
+  ========================================== -->
+
+  <!-- AOS -->
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- SWIPER -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- GSAP -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- SCROLL TRIGGER -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- HOME JS -->
+
+  <script type="module" src="./home.js"></script>
+
+  <!-- AOS INIT -->
+
+  <script>
+
+    AOS.init({
+
+      duration: 1000,
+      once: true
+
+    });
+
+  </script>
+
+</body>
+
+</html>
+```

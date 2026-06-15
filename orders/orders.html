@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>My Orders | Fryzaa</title>
+
+
+<link rel="stylesheet"
+href="./orders.css">
+
+</head>
+
+<body>
+
+<div class="orders-container">
+
+  <h1>
+    My Orders
+  </h1>
+
+  <a
+href="../Home/index.html"
+class="back-home-btn"
+>
+
+  <i class="fa-solid fa-arrow-left"></i>
+
+  Back To Home
+
+</a>
+
+  <div
+  id="ordersList"
+  class="orders-list"
+  >
+
+    <div class="loading">
+
+      Loading Orders...
+
+    </div>
+
+  </div>
+
+</div>
+
+<script
+type="module"
+src="./orders.js"
+></script>
+<!-- Order Status Notification -->
+
+<div id="orderStatusPopup">
+
+  <h3>
+    🔔 Order Update
+  </h3>
+
+  <p id="orderStatusMessage">
+    Your order status changed.
+  </p>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Fryzaa Checkout
+  </title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="./checkout.css"
+  >
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+
+    <div class="logo">
+
+      <a href="../Home/index.html">
+
+        FRYZAA
+
+      </a>
+
+    </div>
+
+    <a
+      href="../Cart/cart.html"
+      class="back-btn"
+    >
+
+      <i class="fa-solid fa-arrow-left"></i>
+
+      Back To Cart
+
+    </a>
+
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="checkout-hero">
+
+    <h1>
+
+      Checkout
+
+    </h1>
+
+    <p>
+
+      Complete your details and place your order.
+
+    </p>
+
+  </section>
+
+  <!-- MAIN -->
+
+  <section class="checkout-section">
+
+    <!-- LEFT SIDE -->
+
+    <div class="checkout-form">
+
+      <h2>
+
+        Customer Details
+
+      </h2>
+
+      <form id="checkoutForm">
+
+        <div class="input-group">
+
+          <label>
+
+            Full Name *
+
+          </label>
+
+          <input
+            type="text"
+            id="customerName"
+            required
+          >
+
+        </div>
+
+        <div class="input-group">
+
+          <label>
+
+            Phone Number *
+
+          </label>
+
+          <input
+            type="tel"
+            id="customerPhone"
+            required
+          >
+
+        </div>
+
+        <div class="input-group">
+
+          <label>
+
+            Email (Optional)
+
+          </label>
+
+          <input
+            type="email"
+            id="customerEmail"
+          >
+
+        </div>
+        <div class="location-box">
+
+  <button
+    type="button"
+    id="getLocationBtn"
+  >
+
+    📍 Use Current Location
+
+  </button>
+
+  <p id="locationStatus">
+
+    Delivery available within 6 KM only.
+
+  </p>
+
+</div>
+                <!-- ADDRESS -->
+
+        <h2 class="section-title">
+
+          Delivery Address
+
+        </h2>
+
+        <div class="input-group">
+
+          <label>
+
+            House / Flat No *
+
+          </label>
+
+          <input
+            type="text"
+            id="houseNo"
+            required
+          >
+
+        </div>
+
+        <div class="input-group">
+
+          <label>
+
+            Area / Street *
+
+          </label>
+
+          <input
+            type="text"
+            id="street"
+            required
+          >
+
+        </div>
+
+        <div class="input-group">
+
+          <label>
+
+            City *
+
+          </label>
+
+          <input
+            type="text"
+            id="city"
+            required
+          >
+
+        </div>
+
+        <div class="input-group">
+
+          <label>
+
+            Pincode *
+
+          </label>
+
+          <input
+            type="text"
+            id="pincode"
+            required
+          >
+
+        </div>
+
+        <div class="input-group">
+
+          <label>
+
+            Landmark (Optional)
+
+          </label>
+
+          <input
+            type="text"
+            id="landmark"
+          >
+
+        </div>
+
+        <div class="input-group">
+
+          <label>
+
+            Special Instructions
+
+          </label>
+
+          <textarea
+            id="instructions"
+            rows="4"
+            placeholder="Extra spicy, less mayo, ring bell etc."
+          ></textarea>
+
+        </div>
+
+        <!-- PAYMENT -->
+
+        <h2 class="section-title">
+
+          Payment Method
+
+        </h2>
+
+        <div class="payment-options">
+
+          <label class="payment-card">
+
+            <input
+              type="radio"
+              name="paymentMethod"
+              value="COD"
+              checked
+            >
+
+            <span>
+
+              💵 Cash On Delivery
+
+            </span>
+
+          </label>
+
+          <label class="payment-card">
+
+            <input
+              type="radio"
+              name="paymentMethod"
+              value="ONLINE"
+            >
+
+            <span>
+
+              💳 Online Payment (Razorpay)
+
+            </span>
+
+          </label>
+
+        </div>
+
+      </form>
+
+    </div>
+        <!-- RIGHT SIDE -->
+
+    <div class="checkout-summary">
+
+      <h2>
+
+        Order Summary
+
+      </h2>
+
+      <div
+        id="checkoutItems"
+        class="checkout-items"
+      >
+
+        <!-- JS WILL INSERT ITEMS -->
+
+      </div>
+
+      <div class="summary-box">
+
+        <div class="summary-row">
+
+          <span>
+
+            Item Total
+
+          </span>
+
+          <span id="itemTotal">
+
+            ₹0
+
+          </span>
+
+        </div>
+
+        <div class="summary-row">
+
+          <span>
+
+            Platform Fee
+
+          </span>
+
+          <span>
+
+            ₹7
+
+          </span>
+
+        </div>
+
+        <div class="summary-row">
+
+          <span>
+
+            Delivery Charge
+
+          </span>
+
+          <span>
+
+            ₹25
+
+          </span>
+
+        </div>
+
+        <hr>
+<div class="coupon-box">
+
+  <input
+    type="text"
+    id="couponInput"
+    placeholder="Enter Coupon Code"
+  >
+
+  <button
+    id="applyCouponBtn"
+  >
+
+    Apply
+
+  </button>
+
+</div>
+
+<div
+id="couponMessage"
+class="coupon-message"
+></div>
+        <div
+          class="summary-row grand-total"
+        >
+
+          <span>
+
+            Grand Total
+
+          </span>
+
+          <span id="grandTotal">
+
+            ₹0
+
+          </span>
+
+        </div>
+
+      </div>
+
+      <button
+        id="placeOrderBtn"
+        class="place-order-btn"
+      >
+
+        Place Order
+
+      </button>
+
+      <p class="payment-note">
+
+        Secure payments powered by Razorpay.
+        Cash on Delivery also available.
+
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="footer-bottom">
+
+      © 2026 FRYZAA.
+      All Rights Reserved.
+
+    </div>
+
+  </footer>
+
+  <!-- RAZORPAY -->
+
+  <script
+    src="https://checkout.razorpay.com/v1/checkout.js"
+  ></script>
+
+  <!-- JS -->
+
+  <script type="module" src="./checkout.js"></script>
+
+</body>
+
+</html>

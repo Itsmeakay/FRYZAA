@@ -1,0 +1,473 @@
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+
+  width: 100%;
+
+  height: 85px;
+
+  padding: 0 6%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  z-index: 1000;
+
+  background: rgba(0,0,0,0.45);
+
+  backdrop-filter: blur(12px);
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.05);
+
+}
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+
+  z-index: 2000;
+
+}
+
+.logo a {
+
+  font-family: "Bebas Neue", sans-serif;
+
+  font-size: 2.5rem;
+
+  letter-spacing: 3px;
+
+  color: var(--premium-yellow);
+
+}
+
+/* =========================================
+   NAV LINKS
+========================================= */
+
+.nav-links {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 40px;
+
+}
+
+.nav-links a {
+
+  color: var(--white);
+
+  font-size: 1rem;
+
+  font-weight: 500;
+
+  position: relative;
+
+  transition: 0.3s;
+
+}
+
+.nav-links a::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -5px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: var(--premium-yellow);
+
+  transition: 0.3s;
+
+}
+
+.nav-links a:hover::after {
+
+  width: 100%;
+
+}
+
+.nav-links a:hover {
+
+  color: var(--premium-yellow);
+
+}
+
+/* =========================================
+   NAV ACTIONS
+========================================= */
+
+.nav-actions {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+}
+
+/* LOGIN BUTTON */
+
+.login-btn {
+
+  padding: 10px 22px;
+
+  border-radius: 40px;
+
+  border: 1px solid var(--premium-yellow);
+
+  background: transparent;
+
+  color: var(--white);
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+}
+
+.login-btn:hover {
+
+  background: var(--premium-yellow);
+
+  color: var(--luxury-black);
+
+}
+
+/* CART */
+
+.cart-icon {
+
+  position: relative;
+
+  font-size: 1.3rem;
+
+  color: var(--white);
+
+  cursor: pointer;
+
+}
+
+.cart-count {
+
+  position: absolute;
+
+  top: -10px;
+
+  right: -12px;
+
+  width: 20px;
+
+  height: 20px;
+
+  border-radius: 50%;
+
+  background: var(--primary-red);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 0.75rem;
+
+}
+
+/* ORDER BUTTON */
+
+.order-btn {
+
+  padding: 12px 28px;
+
+  border: none;
+
+  border-radius: 40px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--premium-yellow),
+      var(--orange-accent)
+    );
+
+  color: var(--luxury-black);
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+}
+
+.order-btn:hover {
+
+  background: var(--primary-red);
+
+  color: var(--white);
+
+}
+
+/* =========================================
+   HAMBURGER
+========================================= */
+
+.hamburger {
+
+  display: none;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  cursor: pointer;
+
+  z-index: 2000;
+
+}
+
+.hamburger span {
+
+  width: 30px;
+
+  height: 3px;
+
+  border-radius: 20px;
+
+  background: var(--white);
+
+  transition: 0.3s;
+
+}
+
+/* HAMBURGER ANIMATION */
+
+.hamburger.open span:nth-child(1) {
+
+  transform:
+    rotate(45deg)
+    translateY(12px);
+
+}
+
+.hamburger.open span:nth-child(2) {
+
+  opacity: 0;
+
+}
+
+.hamburger.open span:nth-child(3) {
+
+  transform:
+    rotate(-45deg)
+    translateY(-12px);
+
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+  .nav-links {
+
+    position: fixed;
+
+    top: 0;
+
+    right: -100%;
+
+    width: 260px;
+
+    height: 100vh;
+
+    background: #111111;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 120px 35px;
+
+    gap: 35px;
+
+    transition: 0.4s;
+
+    z-index: 1500;
+
+  }
+
+  .nav-links.active {
+
+    right: 0;
+
+  }
+
+  .hamburger {
+
+    display: flex;
+
+  }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width:768px) {
+
+  /* NAVBAR */
+
+  .navbar {
+
+    height: 80px;
+
+    padding: 0 5%;
+
+    gap: 15px;
+
+  }
+
+  /* LOGO */
+
+  .logo a {
+
+    font-size: 2rem;
+
+  }
+
+  /* NAV LINKS */
+
+  .nav-links {
+
+    position: fixed;
+
+    top: 0;
+
+    right: -100%;
+
+    width: 260px;
+
+    height: 100vh;
+
+    background: #111111;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 120px 35px;
+
+    gap: 35px;
+
+    transition: 0.4s ease;
+
+    z-index: 1500;
+
+  }
+
+  .nav-links.active {
+
+    right: 0;
+
+  }
+
+  /* LOGIN BUTTON */
+
+  .login-btn {
+
+    padding: 8px 14px;
+
+    font-size: 0.8rem;
+
+  }
+
+  /* CART */
+
+  .cart-icon {
+
+    font-size: 1.2rem;
+
+  }
+
+  /* HAMBURGER */
+
+  .hamburger {
+
+    display: flex;
+
+    margin-left: 5px;
+
+  }
+
+  .hamburger span {
+
+    width: 26px;
+
+  }
+
+  /* ORDER BUTTON */
+
+  .order-btn {
+
+    display: none;
+
+  }
+
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .logo a {
+
+    font-size: 2rem;
+
+  }
+
+  .login-btn {
+
+    padding: 10px 16px;
+
+    font-size: 0.85rem;
+
+  }
+
+  .order-btn {
+
+    padding: 11px 18px;
+
+    font-size: 0.9rem;
+
+  }
+
+}

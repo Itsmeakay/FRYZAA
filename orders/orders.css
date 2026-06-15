@@ -1,0 +1,313 @@
+body{
+
+  margin:0;
+
+  font-family:Poppins,sans-serif;
+
+  background:#0b0b0b;
+
+  color:white;
+
+}
+
+.orders-container{
+
+  max-width:1000px;
+
+  margin:auto;
+
+  padding:30px 20px;
+
+}
+
+.orders-container h1{
+
+  color:#ffb400;
+
+  margin-bottom:25px;
+
+}
+
+.orders-list{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:20px;
+
+}
+
+.order-card{
+
+  background:#151515;
+
+  border-radius:20px;
+
+  padding:20px;
+
+  border:1px solid rgba(255,255,255,.08);
+
+}
+
+.order-id{
+
+  color:#ffb400;
+
+  font-weight:700;
+
+}
+
+.order-total{
+
+  margin-top:10px;
+
+}
+
+.order-status{
+
+  margin-top:10px;
+
+  font-weight:700;
+
+}
+
+.loading{
+
+  text-align:center;
+
+}
+.repeat-btn{
+
+  margin-top:15px;
+
+  width:100%;
+
+  border:none;
+
+  padding:12px;
+
+  border-radius:12px;
+
+  cursor:pointer;
+
+  font-size:.95rem;
+
+  font-weight:600;
+
+  background:
+
+  linear-gradient(
+    135deg,
+    #ffb400,
+    #ff7a00
+  );
+
+  color:#111;
+
+  transition:.3s;
+
+}
+
+.repeat-btn:hover{
+
+  transform:
+  translateY(-2px);
+
+  box-shadow:
+
+  0 10px 20px
+
+  rgba(
+    255,
+    180,
+    0,
+    .25
+  );
+
+}
+
+.repeat-btn:active{
+
+  transform:
+  scale(.98);
+
+}
+.order-status{
+
+  margin-top:10px;
+
+  padding:8px 12px;
+
+  border-radius:30px;
+
+  display:inline-block;
+
+  font-weight:600;
+
+}
+
+.order-status.pending{
+
+  background:#fff3cd;
+
+  color:#856404;
+
+}
+
+.order-status.accepted{
+
+  background:#d4edda;
+
+  color:#155724;
+
+}
+
+.order-status.processing{
+
+  background:#ffe5b4;
+
+  color:#8a5200;
+
+}
+
+.order-status.out_for_delivery{
+
+  background:#d1ecf1;
+
+  color:#0c5460;
+
+}
+
+.order-status.delivered{
+
+  background:#d4edda;
+
+  color:#155724;
+
+}
+
+.order-status.cancelled{
+
+  background:#f8d7da;
+
+  color:#721c24;
+
+}
+.back-home-btn{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  margin-bottom:20px;
+
+  padding:10px 18px;
+
+  border-radius:50px;
+
+  text-decoration:none;
+
+  font-weight:600;
+
+  background:
+
+  rgba(
+    255,
+    180,
+    0,
+    .12
+  );
+
+  border:
+
+  1px solid
+  rgba(
+    255,
+    180,
+    0,
+    .25
+  );
+
+  color:#ffb400;
+
+  transition:.3s;
+
+}
+
+.back-home-btn:hover{
+
+  transform:
+  translateY(-2px);
+
+  background:
+
+  rgba(
+    255,
+    180,
+    0,
+    .18
+  );
+
+}
+/* =========================
+   ORDER STATUS POPUP
+========================= */
+
+#orderStatusPopup{
+
+  position: fixed;
+
+  top: 90px;
+
+  right: 20px;
+
+  width: 300px;
+
+  background: #111;
+
+  color: white;
+
+  border-left: 5px solid #ffb800;
+
+  border-radius: 12px;
+
+  padding: 15px;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.5);
+
+  z-index: 9999;
+
+  transform: translateX(350px);
+
+  transition: 0.4s;
+
+}
+
+
+#orderStatusPopup.show{
+
+  transform: translateX(0);
+
+}
+
+
+#orderStatusPopup h3{
+
+  color: #ffb800;
+
+  margin-bottom: 8px;
+
+}
+
+
+#orderStatusPopup p{
+
+  color: #ddd;
+
+  font-size: 14px;
+
+}
